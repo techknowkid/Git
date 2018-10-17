@@ -1,0 +1,167 @@
+﻿@{
+    Layout = "~/Views/Shared/_Pagelayout.cshtml";
+
+}
+<br />
+<br />
+
+
+
+<section class="about-area relative" id="round1">
+    <div class="container-fluid">
+        <div class="row  d-flex justify-content-start align-items-center">
+            
+            <div class="about-details">
+                <h2>
+                    <span>Which year </span><span>did the </span><span>movie</span> <span>Rocky</span>  <span>Release </span>?<br>
+                </h2>
+            </div>
+                <br />
+                <br />
+                <div class="col-lg-6 col-md-12 no-padding">
+                <img class="img-fluid" src="~/Content/img/rocky1.jpg" alt="">
+
+
+            </div>
+            <div class="col-lg-4 col-md-12 align-items-center"">
+                <div class="row">
+
+                    <input id="as1" type="radio" name="Round1radio" value="1995" class="col-md-5" />
+                    <h4 class="text-white text-uppercase control-label">1995</h4>
+
+                </div>
+                <br />
+                <div class="row">
+
+                    <input id="as2" type="radio" name="Round1radio" value="1976" class="col-md-5" />
+                    <h4 class="text-white text-uppercase control-label ">1976</h4>
+
+
+
+
+
+
+                </div>
+                <br />
+                    <div class="row">
+
+                        <input id="as3" type="radio" name="Round1radio" value="1984" class="col-md-5" />
+                        <h4 class="text-white text-uppercase control-label ">1984</h4>
+
+
+
+
+
+                        </div>
+            <br />
+            <br />
+            <br />
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+
+                        <button value="NEXTR1"  onclick="Round1()" class="btn-primary col-lg-6 col-sm-12 no-padding">
+
+
+                            <h4 class="text-uppercase text-white">NEXT</h4>
+
+                        </button>
+                    </div>
+                </div></div>
+            
+           
+                    </div>
+       
+                
+    </div>
+</section>
+<section class="about-area relative" id="round2">
+    <div class="container-fluid">
+        <div class="row  d-flex justify-content-start align-items-center">
+
+            <div class="about-details">
+                <h2>
+                    <span>Who played </span><span>the </span><span>charater</span> <span>of Geeta Phogat</span>  <span>In Dangal </span>?<br>
+                </h2>
+            </div>
+            <br />
+            <br />
+            <div class="col-lg-6 col-md-12 no-padding">
+                <img class="img-fluid" src="/Content/img/Dangal1.jpg" alt="">
+
+
+            </div>
+            <div class="col-lg-4 col-md-12 align-items-center">
+                <div class="row col-md-8">
+
+                    <input id="as1" type="radio" name="Round2radio" value="Fatima Sana Shaikh"  />
+                    <h4 class="text-white text-uppercase control-label">Fatima Sana Shaikh</h4>
+
+                </div>
+                <br />
+                <div class="row col-md-8">
+
+                    <input id="as2" type="radio" name="Round2radio" value="Sanya Malhotra" />
+                    <h4 class="text-white text-uppercase control-label " style="padding-left:2px">Sanya Malhotra</h4>
+
+
+
+
+
+
+                </div>
+                <br />
+                <div class="row col-md-8">
+
+                    <input id="as3" type="radio" name="Round2radio" value="Suhani Bhatnagar" />
+                    <h4 class="text-white text-uppercase control-label ">Suhani Bhatnagar</h4>
+
+
+
+
+
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+
+                        <button value="NEXTR1" onclick="Round1()" class="btn-primary col-lg-6 col-sm-12 no-padding">
+
+
+                            <h4 class="text-uppercase text-white">NEXT</h4>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded',
+                               function () {
+                                   $("#round1").show();
+                                   $("#round2").hide();
+                               })
+    function Round1() {
+        debugger
+        //document.getElementById("round2").hidden = false;
+        //document.getElementById("round2").hidden = true;
+        $("#round1").hide();
+        $("#round2").show();
+     
+    
+
+
+    }
+</script>
