@@ -1,11 +1,4 @@
-/*--------------------------- Color variations ----------------------*/
-/* Medium Layout: 1280px */
-/* Tablet Layout: 768px */
-/* Mobile Layout: 320px */
-/* Wide Mobile Layout: 480px */
-/* =================================== */
-/*  Basic Style 
-/* =================================== */
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #691cff;
@@ -103,10 +96,7 @@ a, a:focus, a:hover {
   padding: 60px;
 }
 
-/**
- *  Typography
- *
- **/
+
 .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
   font-size: 1em;
   line-height: inherit;
@@ -164,15 +154,7 @@ td, th {
   border-radius: 0px;
 }
 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+
 .clear::before, .clear::after {
   content: " ";
   display: table;
@@ -2021,7 +2003,9 @@ nav a:hover {
   z-index: 1;
 }
 
-
+ .banner-area {
+                    background: url(../Content/img/banner-bg.jpg) no-repeat center center/cover;
+                }
 
 @media (max-width: 767px) {
   .banner-area .fullscreen {

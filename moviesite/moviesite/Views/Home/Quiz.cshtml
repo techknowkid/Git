@@ -6,7 +6,7 @@
 <br />
 
 
-
+  <!-- Strat round1 Area -->
 <section class="about-area relative" id="round1">
     <div class="container-fluid">
         <div class="row  d-flex justify-content-start align-items-center">
@@ -59,7 +59,7 @@
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
 
-                        <button value="NEXTR1"  onclick="Round1()" class="btn-primary col-lg-6 col-sm-12 no-padding">
+                        <button value="NEXTR1" id="NEXTR1" class="btn-primary col-lg-6 col-sm-12 no-padding">
 
 
                             <h4 class="text-uppercase text-white">NEXT</h4>
@@ -74,6 +74,9 @@
                 
     </div>
 </section>
+  <!-- End round1 Area -->
+
+  <!-- Strat round2 Area -->
 <section class="about-area relative" id="round2">
     <div class="container-fluid">
         <div class="row  d-flex justify-content-start align-items-center">
@@ -126,7 +129,7 @@
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
 
-                        <button value="NEXTR1" onclick="Round1()" class="btn-primary col-lg-6 col-sm-12 no-padding">
+                        <button value="NEXTR2" id="NEXTR2" class="btn-primary col-lg-6 col-sm-12 no-padding">
 
 
                             <h4 class="text-uppercase text-white">NEXT</h4>
@@ -142,26 +145,23 @@
 
     </div>
 </section>
-
+  <!-- End round2 Area -->
 
 
 
 
 <script>
+
+    // only show round1 area when page loads
     document.addEventListener('DOMContentLoaded',
                                function () {
                                    $("#round1").show();
                                    $("#round2").hide();
                                })
-    function Round1() {
-        debugger
-        //document.getElementById("round2").hidden = false;
-        //document.getElementById("round2").hidden = true;
-        $("#round1").hide();
-        $("#round2").show();
+   
      
     
 
 
-    }
+    
 </script>

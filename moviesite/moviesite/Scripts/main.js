@@ -15,7 +15,7 @@ $(document).ready(function(){
   
 	
      
-     // -------   Active Mobile Menu-----//
+     //  Active Mobile Menu
 
     $(".menu-bar").on('click', function(e){
         e.preventDefault();
@@ -42,26 +42,36 @@ $('a[href*="#"]')
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
+        
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
+          
           var $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(":focus")) { 
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+            $target.attr('tabindex','-1');
+            $target.focus(); 
           };
         });
       }
     }
   });
+    //Round1 next button
+   
 
+$('#NEXTR1').click(function () {
+
+   
+    $("#round1").hide();
+    $("#round2").show();
+
+
+
+});
 
     //  video popup
 
@@ -99,26 +109,26 @@ $('.play-btn').magnificPopup({
     // -------   Mail Send ajax
 
      $(document).ready(function() {
-        var form = $('#myForm'); // contact form
-        var submit = $('.submit-btn'); // submit button
-        var alert = $('.alert-msg'); // alert div for show alert message
+        var form = $('#myForm'); 
+        var submit = $('.submit-btn'); 
+        var alert = $('.alert-msg'); 
 
         // form submit event
         form.on('submit', function(e) {
-            e.preventDefault(); // prevent default form submit
+            e.preventDefault(); 
 
             $.ajax({
-                url: 'mail.php', // form action url
-                type: 'POST', // form submit method get/post
-                dataType: 'html', // request type html/json/xml
-                data: form.serialize(), // serialize form data
+                url: 'mail.php', 
+                type: 'POST', 
+                dataType: 'html', 
+                data: form.serialize(), 
                 beforeSend: function() {
                     alert.fadeOut();
                     submit.html('Sending....'); // change submit button text
                 },
                 success: function(data) {
-                    alert.html(data).fadeIn(); // fade in response data
-                    form.trigger('reset'); // reset form
+                    alert.html(data).fadeIn();
+                    form.trigger('reset'); 
                     submit.attr("style", "display: none !important");; // reset submit button text
                 },
                 error: function(e) {

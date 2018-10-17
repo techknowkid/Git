@@ -19,9 +19,7 @@ namespace moviesite.Controllers
 
         public ActionResult Quiz()
         {
-            ValuesController val = new ValuesController();
-
-            var t = val.Get() ;
+            
            
             
 
