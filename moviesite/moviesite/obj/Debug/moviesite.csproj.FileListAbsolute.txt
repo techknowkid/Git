@@ -172,3 +172,4 @@ C:\Users\Naadhira\Documents\Visual Studio 2015\Git\moviesite\moviesite\bin\Micro
 C:\Users\Naadhira\Documents\Visual Studio 2015\Git\moviesite\moviesite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Naadhira\Documents\Visual Studio 2015\Git\moviesite\moviesite\obj\Debug\moviesite.dll
 C:\Users\Naadhira\Documents\Visual Studio 2015\Git\moviesite\moviesite\obj\Debug\moviesite.pdb
+C:\Users\Naadhira\Documents\Visual Studio 2015\Git\moviesite\moviesite\obj\Debug\moviesite.csprojResolveAssemblyReference.cache
